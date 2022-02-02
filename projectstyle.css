@@ -1,0 +1,116 @@
+body{
+	font-family:'PT Sans',sans-serif;
+	background-color:#252529 ;
+	margin: 0;	/*to erase the default indentation or spaces*/
+	color: #FFFFFF;
+	line-height: 1.6;
+}
+/*now we romove the underlines to links*/
+a{
+	text-decoration: none;
+	color: #BFC9CA;
+}
+#indoor{
+	list-style: none;
+}
+#showcase{
+	margin: 0;
+	padding: 0;
+	background: url('wallpaper.jpg') no-repeat center/cover;
+	width: 100%;
+	height: 100vh;	/*vh ==> Viewport height that means the user view*/
+	position: relative;
+	overflow: hidden;	/*to avoid the bulging out of image*/
+
+}
+/*since we have container id inside the shaowase we are giving like this*/
+#showcase .container{
+	margin-top: 25vh;	/*to provide the space between that AK sports and that avove part*/
+}
+#showcase h1{
+	font-size: 4rem; 	/*root elements font size*/
+	margin-bottom: 0;
+}
+#showcase h2{
+	font-size: 2rem;
+
+}
+
+nav{
+	height: 40px;
+	width: 100%;
+	background-color: #090A0A;
+	color: rgb(51,34,34);	/*to make the navigation dots to black color*/
+	position: fixed;
+}
+/*this is for the navigation bar units*/
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+nav li{
+	display: inline;	/*to make the units in horizantal line*/
+	float: left;
+}	
+
+nav a {
+	display: inline-block;	/*to make the elememts look like blocks*/
+	width: 100px;
+	text-align: center;
+	text-decoration: underline;
+	padding: 10px 0;
+	color: #eeeeee;
+}
+
+nav li:hover{
+	background-color: #5D9797;
+}
+
+.container{
+	max-width: 1180px;
+	text-align: center;
+	margin: auto;
+	padding: 0 3rem;
+}
+
+.lead{
+	font-size: 1.3rem;
+}
+
+footer .footer-cols{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(4,1fr);
+	padding: 2rem;
+	text-align: left;
+	font-size: 14px;
+}
+
+footer .footer-cols ul{
+	list-style: none;
+}
+
+footer .footer-cols ul li:first-child{
+	font-size: 1.2rem;
+	padding-bottom: 0.5rem;
+	border-bottom: #444444 solid 2px;
+	margin-bottom: 1rem;
+}
+
+footer .footer-bottom{
+	background-color: #333333;
+	padding: 1rem;
+	text-align: center;
+}
+section .container ul li{
+	list-style: none;
+
+}
+section .container h2{
+	font-size: 1.2rem;
+	/*border-bottom: #444444 solid 2px;*/
+}
+section .container p{
+	font-size: 1.2rem;
+}
